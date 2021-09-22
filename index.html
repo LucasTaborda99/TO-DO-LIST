@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+        <!-- A div de adcionar tarefas -->
+        <div id="divAdd">
+            <textarea name="" id="descricaoTarefa" cols="30" rows="2"></textarea>
+            <div class="input-field col s12">
+                <select name="" id="prioridadeTarefa">
+                    <option value="prioridade-baixa">Baixa Prioridade</option>
+                    <option value="prioridade-normal">Prioridade Normal</option>
+                    <option value="prioridade-alta">Alta Prioridade</option>
+                </select>
+            </div>
+            <button class="waves-effect waves-light btn" onclick="fabricaTarefas()" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> Adicionar</button>
+        </div>
+        <hr>
+
+        
+
+        <!-- A div de listar tarefas -->
+        <div id="divLista">
+
+            <!-- Representa um elemento da lista -->
+            <!-- <div class="tarefa prioridade-alta">
+                <p class="descTarefa"> Estudar para as  </p>
+                <button>Excluir</button>
+                <input type="checkbox" name="" id="">
+            </div> -->
+
+        </div>  
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
